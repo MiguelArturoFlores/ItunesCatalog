@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="3dp"
+	android:background="#000000"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context="com.mgl.catalogitunes.DetailActivity" >
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="10dp"
+			android:padding="1dp"
+            android:background="#000000"
+             />
+
+        <TextView
+            android:id="@+id/detailItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/description_padding"
+            android:layout_toRightOf="@+id/detailImage"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/title_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailItemName"
+            android:layout_marginLeft="@dimen/description_padding"
+            android:layout_toRightOf="@+id/detailImage" 
+            android:textSize="@dimen/description_text"
+            />
+
+        <TextView
+            android:id="@+id/detailType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailCompanyName"
+            android:layout_marginLeft="@dimen/description_padding"
+            android:layout_toRightOf="@+id/detailImage"
+            android:textSize="@dimen/description_text" />
+
+        <TextView
+            android:id="@+id/detailCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailCompanyName"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/detailType"
+            android:textSize="@dimen/description_text" />
+
+        <TextView
+            android:id="@+id/detailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailType"
+            android:layout_marginLeft="@dimen/description_padding"
+            android:layout_toRightOf="@+id/detailImage" 
+            android:textSize="@dimen/description_text"/>
+
+        <TextView
+            android:id="@+id/detailDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailPrice"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" 
+            android:textSize="@dimen/description_text"/>
+    </RelativeLayout>
+
+</ScrollView>
